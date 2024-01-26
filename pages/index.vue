@@ -21,6 +21,7 @@
         <Database />
       </div>
     </div>
+    <CardComponent />
   </div>
 </template>
 
