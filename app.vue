@@ -1,6 +1,7 @@
 <template>
   <NuxtLayout>
     <v-app id="inspire">
+      <Navbar />
       <v-main>
         <NuxtPage />
       </v-main>
