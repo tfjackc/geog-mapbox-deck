@@ -5,10 +5,10 @@
       <!-- Front End Technologies -->
       <div class="flex items-center mb-4">
         <Icon name="gis:layer-alt-poi" color="white" size="36" class="m-1"/>
-        <h3 class="text-lg font-semibold px-2">GIS Development / Administration</h3>
+        <h3 class="text-lg font-semibold px-2">GIS Administration</h3>
       </div>
       <p class="text-gray-400 text-base">
-        Develop, design, and manage web services utilizing the ArcGIS Enterprise Portal & ArcGIS Server, including the creation and integration of geospatial content using ArcGIS Pro to support all county departments and partners.
+        Manage and design web services utilizing the ArcGIS Enterprise Portal & ArcGIS Server. My role involves creating and integrating geospatial content using ArcGIS Pro, which is fundamental in supporting the GIS requirements of all county departments and partners. This includes leveraging my cartographic skills to ensure accurate and user-friendly GIS solutions.
       </p>
       <hr class="my-4 border-gray-400"> <!-- Divider -->
       <div class="flex h-12"> <!-- Use 'flex' instead of 'flex-row' -->
