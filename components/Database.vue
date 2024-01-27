@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-sm rounded overflow-hidden shadow-lg hover:bg-stone-900">
+  <div class="rounded overflow-hidden shadow-lg hover:bg-stone-900 hover:border-stone-50 flex flex-col md:flex-row justify-between">
     <div class="px-6 py-4">
       <div class="flex items-center mb-4">
         <Icon name="material-symbols:database-outline" color="white" size="36" class="m-1"/>
