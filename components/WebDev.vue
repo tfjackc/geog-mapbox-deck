@@ -1,6 +1,6 @@
 <template>
   <!-- Second Column -->
-  <div class="rounded overflow-hidden shadow-lg hover:bg-stone-900 hover:border-stone-50 flex flex-col md:flex-row justify-between">
+  <div class="rounded overflow-hidden shadow-lg shadow-white hover:border-stone-50 flex flex-col md:flex-row justify-between">
     <div class="py-6 px-6">
       <!-- Front End Technologies -->
       <div class="flex items-center mb-4">

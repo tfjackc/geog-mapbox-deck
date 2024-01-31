@@ -1,11 +1,5 @@
 <template>
-  <div class="">
-    <div class="">
-      <NameAndTitle />
-      <div class="w-96 h-96">
-      <Map />
-      </div>
-    </div>
+  <div class="container mx-auto md:px-40">
     <CardComponent />
   </div>
 </template>

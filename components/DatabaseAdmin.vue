@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="max-w-sm rounded overflow-hidden shadow-lg border border-white hover:bg-stone-900">
+  <div class="max-w-sm rounded overflow-hidden shadow-2xl border border-white">
     <div class="px-6 py-4">
       <div class="font-bold text-xl mb-2">Database Administration</div>
       <p class="text-gray-400 text-base">
