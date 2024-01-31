@@ -7,7 +7,8 @@
       hover:border-stone-50
       flex flex-col
       md:flex-row
-      justify-between"
+      justify-between
+      h-full"
       :class="{'shadow-2xl shadow-stone-800': !theme.global.current.value.dark }">
   <div class="px-6 py-4">
     <div class="flex items-center mb-4">
