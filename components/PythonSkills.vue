@@ -4,13 +4,7 @@ const theme = useTheme()
 </script>
 
 <template>
-  <div class="rounded
-  overflow-hidden
-  hover:border-stone-50
-  flex flex-col
-  md:flex-row
-  justify-space-between
-  h-full">
+  <div class="rounded overflow-hidden hover:border-stone-50 flex flex-col md:flex-row justify-space-between h-full">
     <div class="px-6 py-4">
       <div class="flex items-center mb-4">
         <Icon name="logos:python" color="white" size="36" class="m-1"/>
