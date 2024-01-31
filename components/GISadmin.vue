@@ -13,7 +13,7 @@
       <hr class="my-4 border-gray-400"> <!-- Divider -->
       <div class="flex h-12"> <!-- Use 'flex' instead of 'flex-row' -->
         <NuxtImg src="https://maps.ucsf.edu/sites/g/files/tkssra2376/f/wysiwyg/ArcGIS-Pro.png" height="36" class="m-1"/>
-        <NuxtImg src="/ArcGIS-Enterprise.png" class="m-1"/>
+        <NuxtImg src="/enterprise.png" class="m-1"/>
 <!--        <Icon name="file-icons:leaflet" size="36" class="m-1" color="green"/>-->
       </div>
     </div>
