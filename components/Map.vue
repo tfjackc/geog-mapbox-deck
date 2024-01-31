@@ -7,6 +7,7 @@ import { Deck } from "@deck.gl/core";
 import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import { ref, onMounted } from "vue";
+import { careerArcLayer } from "~/gis/layers";
 
 const DEFAULT_MAP_CENTER = [0, 0];
 const DEFAULT_MAP_BEARING = 0;
@@ -45,7 +46,7 @@ onMounted(async () => {
 
   deck.value = new Deck({
     parent: document.getElementById("map"),
-    layers: [],
+    layers: [careerArcLayer],
     viewState: currentViewState.value,
     onViewStateChange: ({ viewState }) => {
       currentViewState.value = viewState;
