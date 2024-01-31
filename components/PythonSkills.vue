@@ -23,6 +23,10 @@ const theme = useTheme()
         Python is my go-to language for an expansive range of applications – from modernizing GIS workflows to backend development, and from crafting compelling visualizations to server-side scripting. My expertise extends through Jupyter notebooks, Pandas, GeoPandas, to building robust open-source solutions and intuitive GUIs. Whether it's for spatial analysis, data manipulation, or any facet of data science, I harness Python's power to deliver innovative, efficient solutions.
       </p>
       <hr class="my-4 border-gray-400">
+      <Icon name="logos:jupyter" size="36" class="m-1"/>
+      <Icon name="logos:pandas" size="64" class="m-1"/>
+      <Icon name="logos:matplotlib-icon" size="36" class="m-1"/>
+      <Icon name="devicon:plotly" size="36" class="m-1"/>
     </div>
   </div>
 </template>
