@@ -1,12 +1,5 @@
 <template>
-<div class="
-      rounded
-      overflow-hidden
-      hover:border-stone-50
-      flex flex-col
-      md:flex-row
-      justify-between
-      h-full">
+<div class="rounded overflow-hidden hover:border-stone-50 flex flex-col md:flex-row justify-between h-full">
   <div class="px-6 py-4">
     <div class="flex items-center mb-4">
       <Icon name="material-symbols:database-outline" :color="{'black': !theme.global.current.value.dark }" size="36" class="m-1"/>

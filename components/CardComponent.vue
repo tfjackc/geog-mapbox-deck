@@ -20,7 +20,7 @@
 </template>
 
 <script setup lang="ts">
-import WebDev from "~/components/WebDev.vue";
+import WebDev from "~/components/GISadmin.vue";
 import FrontEnd from "~/components/FrontEnd.vue";
 </script>
 
