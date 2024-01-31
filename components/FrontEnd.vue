@@ -1,10 +1,18 @@
 <template>
   <!-- Second Column -->
-  <div class="rounded overflow-hidden shadow-lg shadow-white hover:border-stone-50 flex flex-col md:flex-row justify-between">
+  <div class="rounded
+        overflow-hidden
+        shadow-lg
+        shadow-white
+        hover:border-stone-50
+        flex flex-col
+        md:flex-row
+        justify-between"
+        :class="{'shadow-2xl shadow-stone-800': !theme.global.current.value.dark }">
     <div class="py-6 px-6">
     <!-- Front End Technologies -->
     <div class="flex items-center mb-4">
-      <Icon name="gis:earth-network" color="white" size="36" class="m-1"/>
+      <Icon name="gis:earth-network" :color="{'black': !theme.global.current.value.dark }" size="36" class="m-1"/>
       <h3 class="text-lg font-semibold">Front End Technologies</h3>
     </div>
     <p class="text-gray-400 text-base">
@@ -23,7 +31,8 @@
 </template>
 
 <script setup lang="ts">
-
+import { useTheme } from 'vuetify'
+const theme = useTheme()
 </script>
 
 <style scoped>

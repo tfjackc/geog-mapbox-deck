@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import WebDev from "~/components/WebDev.vue";
 import FrontEnd from "~/components/FrontEnd.vue";
+
 </script>
 
 <template>
