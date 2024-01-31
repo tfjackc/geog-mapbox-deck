@@ -1,5 +1,6 @@
 <template>
   <div class="container mx-auto md:px-40">
+    <About />
     <CardComponent />
   </div>
 </template>
