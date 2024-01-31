@@ -1,9 +1,3 @@
-<script setup lang="ts">
-import WebDev from "~/components/WebDev.vue";
-import FrontEnd from "~/components/FrontEnd.vue";
-
-</script>
-
 <template>
   <v-container>
     <v-row>
@@ -24,6 +18,11 @@ import FrontEnd from "~/components/FrontEnd.vue";
     </v-row>
   </v-container>
 </template>
+
+<script setup lang="ts">
+import WebDev from "~/components/WebDev.vue";
+import FrontEnd from "~/components/FrontEnd.vue";
+</script>
 
 <style scoped>
 

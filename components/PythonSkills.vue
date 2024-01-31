@@ -13,7 +13,7 @@ const theme = useTheme()
   md:flex-row
   justify-space-between
   h-full"
-   :class="{'shadow-2xl shadow-stone-800': !theme.global.current.value.dark }">
+       :class="{'shadow-2xl shadow-stone-400': !theme.global.current.value.dark }">
     <div class="px-6 py-4">
       <div class="flex items-center mb-4">
         <Icon name="logos:python" color="white" size="36" class="m-1"/>

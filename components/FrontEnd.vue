@@ -1,14 +1,7 @@
 <template>
   <!-- Second Column -->
-  <div class="rounded
-        overflow-hidden
-        shadow-lg
-        shadow-white
-        hover:border-stone-50
-        flex flex-col
-        md:flex-row
-        justify-between"
-        :class="{'shadow-2xl shadow-stone-800': !theme.global.current.value.dark }">
+  <div class="rounded overflow-hidden shadow-lg shadow-white hover:border-stone-50 flex flex-col md:flex-row justify-between"
+       :class="{'shadow-2xl shadow-stone-400': !theme.global.current.value.dark }">
     <div class="py-6 px-6">
     <!-- Front End Technologies -->
     <div class="flex items-center mb-4">
