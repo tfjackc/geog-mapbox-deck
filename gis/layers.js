@@ -1,4 +1,4 @@
-import {ArcLayer, GeoJsonLayer} from "@deck.gl/layers/typed";
+import {ArcLayer, GeoJsonLayer} from "@deck.gl/layers";
 import {myArcData} from "~/data/arc";
 import * as d3 from "d3";
 const minYear = 2013;
