@@ -7,7 +7,9 @@ import { Deck } from "@deck.gl/core";
 import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import { ref, onMounted } from "vue";
-import { careerGeoJson, careerArcLayer, usStatesLayer } from "~/gis/layers.ts";
+import {myArcData} from "~/data/arc.js";
+import * as d3 from "d3";
+//import { careerGeoJson, careerArcLayer, usStatesLayer } from "~/gis/layers.ts";
 
 const DEFAULT_MAP_CENTER = [-104.9903, 39.7392];
 const DEFAULT_MAP_BEARING = -45;
@@ -29,9 +31,42 @@ const INITIAL_VIEW_STATE = {
 };
 
 onMounted(async () => {
-  await nextTick();
 
-  currentViewState.value = INITIAL_VIEW_STATE;
+
+  import('@deck.gl/layers').then(async({ ArcLayer, GeoJsonLayer }) => {
+    // Use ArcLayer and GeoJsonLayer here
+    await nextTick();
+
+    currentViewState.value = INITIAL_VIEW_STATE;
+
+    const careerArcLayer = new ArcLayer({
+      id: 'arc-layer',
+      data: myArcData,
+      getSourcePosition: d => d.source,
+      getTargetPosition: d => d.destination,
+      getSourceColor: [0, 255, 255], // Cyan for source
+      getTargetColor: [255, 0, 255], // Magenta for target
+      getWidth: 2
+    });
+
+    const careerGeoJson = new GeoJsonLayer({
+      id: 'career-arc-layer',
+      data: './career_arc.geojson',
+      pickable: true,
+      stroked: false,
+      filled: true,
+      extruded: true,
+      pointType: 'circle',
+      getFillColor: d => {
+        //@ts-ignore
+        const color = d3.rgb(colorScale(d.properties.Year)); // Convert the color scale result to an RGB object
+        return [color.r, color.g, color.b, 255]; // Add the alpha value, fully opaque
+      },
+      getPointRadius: 1,
+      pointRadiusScale: 10,
+      pointRadiusUnits: 'pixels',
+    });
+
 
   let map = new mapboxgl.Map({
     container: "map",
@@ -69,6 +104,7 @@ onMounted(async () => {
     },
     controller: true,
   });
+});
 });
 </script>
 
