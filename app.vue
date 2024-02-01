@@ -15,11 +15,10 @@ useSeoMeta({
   ogTitle: 'Jack Colpitt - GIS Analyst @ Crook County, Oregon',
   description: 'Webpage / Contact Card Site for Jack Colpitt',
   ogDescription: 'Webpage / Contact Card Site for Jack Colpitt',
-  ogImage: './a_headshot_jc.jpg',
+  ogImage: 'https://herokustatic.s3.us-west-2.amazonaws.com/twitter_image.png',
   twitterCard: 'summary_large_image',
 })
 </script>
-
 
 <style>
 </style>
