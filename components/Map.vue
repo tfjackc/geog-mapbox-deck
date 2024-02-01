@@ -7,7 +7,7 @@ import { Deck } from "@deck.gl/core";
 import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import { ref, onMounted } from "vue";
-import { careerGeoJson, careerArcLayer, usStatesLayer } from "~/gis/layers";
+import { careerGeoJson, careerArcLayer, usStatesLayer } from "~/gis/layers.ts";
 
 const DEFAULT_MAP_CENTER = [-104.9903, 39.7392];
 const DEFAULT_MAP_BEARING = -45;
