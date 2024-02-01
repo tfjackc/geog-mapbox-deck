@@ -1,4 +1,7 @@
 <template>
+  <Head>
+    <Meta name="twitter:image" content="https://herokustatic.s3.us-west-2.amazonaws.com/twitter_image.png"></Meta>
+  </Head>
   <NuxtLayout>
     <v-app id="inspire">
       <Navbar />
