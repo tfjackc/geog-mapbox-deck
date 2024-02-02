@@ -17,7 +17,7 @@ import { ref, onMounted } from "vue";
 import { myArcData } from "~/data/arc.js";
 import * as d3 from "d3";
 //import { storeToRefs } from "pinia";
-//import { useDataStore } from "~/store/data_store.ts";
+//import { useDataStore } from "~/store/data_store.js";
 //const data_store = useDataStore();
 //const { DEFAULT_MAP_PITCH } = storeToRefs(data_store);
 const DEFAULT_MAP_CENTER = [-104.9903, 39.7392];
