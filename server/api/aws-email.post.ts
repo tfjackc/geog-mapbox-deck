@@ -11,7 +11,7 @@ export default defineEventHandler(async (event) => {
 
     const client = new SESClient({ region: REGION });
     const input = { // SendEmailRequest
-        Source: "jackhcolps@gmail.com", // required
+        Source: "colpitt.jack@gmail.com", // required
         Destination: { // Destination
             ToAddresses: [ // AddressList
                 "colpitt.jack@gmail.com",

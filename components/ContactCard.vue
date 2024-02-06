@@ -10,40 +10,45 @@
     </v-row>
     <v-row>
       <v-col cols="12">
-        <v-form>
+        <v-form
+          @submit.prevent="submitForm">
           <v-text-field
               label="Name"
               v-model="name"
               :rules="[required]"
+              clearable: boolean=""
               prepend-icon="mdi-account"
           ></v-text-field>
           <v-text-field
               label="Email"
               v-model="email"
               :rules="[required]"
+              clearable: boolean=""
               prepend-icon="mdi-email"
           ></v-text-field>
           <v-text-field
               label="Subject"
               v-model="subject"
               :rules="[required]"
+              clearable: boolean=""
               prepend-icon="mdi-information-outline"
           ></v-text-field>
           <v-textarea
               label="Message"
               v-model="message"
               :rules="[required]"
+              clearable: boolean=""
               prepend-icon="mdi-message"
           ></v-textarea>
+          <div class="flex justify-end">
+            <v-btn
+                color="primary"
+                variant="elevated"
+                type="submit"
+                text="SUBMIT"
+            ></v-btn>
+          </div>
         </v-form>
-        <div class="flex justify-end">
-                  <v-btn
-                      color="primary"
-                      variant="elevated"
-                      @click="submitForm"
-                      text="SUBMIT"
-                  ></v-btn>
-        </div>
       </v-col>
     </v-row>
   </v-container>
