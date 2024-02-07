@@ -11,33 +11,34 @@
     <v-row>
       <v-col cols="12">
         <v-form
-          @submit.prevent="submitForm">
+          @submit.prevent="submitForm"
+          ref="form">
           <v-text-field
               label="Name"
               v-model="name"
               :rules="[required]"
-              clearable: boolean=""
+              clearable
               prepend-icon="mdi-account"
           ></v-text-field>
           <v-text-field
               label="Email"
               v-model="email"
               :rules="[required]"
-              clearable: boolean=""
+              clearable
               prepend-icon="mdi-email"
           ></v-text-field>
           <v-text-field
               label="Subject"
               v-model="subject"
               :rules="[required]"
-              clearable: boolean=""
+              clearable
               prepend-icon="mdi-information-outline"
           ></v-text-field>
           <v-textarea
               label="Message"
               v-model="message"
               :rules="[required]"
-              clearable: boolean=""
+              clearable
               prepend-icon="mdi-message"
           ></v-textarea>
           <div class="flex justify-end">
@@ -46,6 +47,7 @@
                 variant="elevated"
                 type="submit"
                 text="SUBMIT"
+                @click="reset"
             ></v-btn>
           </div>
         </v-form>
@@ -55,12 +57,21 @@
 </template>
 
 <script setup lang="ts">
+import { ref } from "vue";
 import {storeToRefs} from "pinia";
 import {useDataStore} from "~/store/data_store";
 const data_store = useDataStore();
-import { useTheme } from 'vuetify'
-const theme = useTheme()
+// import { useTheme } from 'vuetify'
+// const theme = useTheme()
 const { name, email, subject, message, submit_dialog } = storeToRefs(data_store);
+const form = ref(null);
+async function reset() {
+  //@ts-ignore
+  form.value.reset()
+}
+function required (v: any) {
+  return !!v || 'Field is required'
+}
 async function submitForm() {
   alert("Thank you for your message! I will get back to you as soon as possible.");
   submit_dialog.value = false;
@@ -75,10 +86,9 @@ async function submitForm() {
     method: 'POST',
     body: formData,
   });
+
 }
-function required (v: any) {
-  return !!v || 'Field is required'
-}
+
 </script>
 
 <style scoped>
