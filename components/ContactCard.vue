@@ -47,7 +47,6 @@
                 variant="elevated"
                 type="submit"
                 text="SUBMIT"
-                @click="reset"
             ></v-btn>
           </div>
         </v-form>
@@ -61,8 +60,6 @@ import { ref } from "vue";
 import {storeToRefs} from "pinia";
 import {useDataStore} from "~/store/data_store";
 const data_store = useDataStore();
-// import { useTheme } from 'vuetify'
-// const theme = useTheme()
 const { name, email, subject, message, submit_dialog } = storeToRefs(data_store);
 const form = ref(null);
 async function reset() {
@@ -86,6 +83,8 @@ async function submitForm() {
     method: 'POST',
     body: formData,
   });
+
+  reset();
 
 }
 
