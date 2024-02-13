@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-5 drop-shadow-md flex flex-col sm:flex-row items-center justify-between py-5"
+  <div class="drop-shadow-md flex flex-col sm:flex-row items-center justify-between py-5"
        :class="{ 'bg-stone-800': theme.global.current.value.dark, 'bg-stone-900': !theme.global.current.value.dark }">
     <div class="flex flex-col sm:flex-row">
       <div class="flex flex-row">
