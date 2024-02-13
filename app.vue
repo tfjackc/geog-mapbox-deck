@@ -4,7 +4,7 @@
   </Head>
   <NuxtLayout>
     <v-app id="inspire">
-      <Navbar />
+      <Navbar v-if="routeName != 'map'"/>
       <v-main>
         <NuxtPage />
       </v-main>
@@ -21,6 +21,9 @@ useSeoMeta({
   ogImage: 'https://herokustatic.s3.us-west-2.amazonaws.com/twitter_image.png',
   twitterCard: 'summary_large_image',
 })
+import { ref } from 'vue'
+const route = useRoute()
+const routeName = ref(route.name)
 </script>
 
 <style>
