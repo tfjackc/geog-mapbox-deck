@@ -21,7 +21,7 @@
           Master of Science in Spatial Data Science
         </div>
         <div class="px-14 text-gray-400 italic">
-          Penn State University -- July 2024
+          Penn State University -- August 2024
         </div>
         <div class="px-2">
           Graduate Certificate in Geospatial Programming and Web Map Development
